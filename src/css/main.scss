@@ -1,0 +1,198 @@
+// main.scss
+
+$contentsize: 50%;
+$smallcontsize: 90%;
+$posterheight: 280px;
+
+body {
+  background-color: #190f03;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#searchDiv {
+  margin: 0 auto;
+}
+
+#searchInput {
+  display: block;
+  width: $contentsize;
+  background-color: #be9e84;
+  font-size: 16px;
+  border-radius: 3px;
+  padding: 20px 10px 20px 10px;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#mainDiv {
+  color: #c6b07f;
+  background-color: #190f03;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.contDivs {
+  color: #c6b07f;
+  background-color: #221200;
+  border: 2px solid #c6b07f;
+  border-radius: 3px;
+  width: $contentsize;
+  margin: auto;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+.titleDivs {
+  font-size: 28px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.starsDivs {
+  font-size: 28px;
+  font-weight: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 2px 2px 8px black;
+}
+
+.actualStars {
+  font-size: 20px;
+}
+
+.reviewDivs {
+  color: #cca460;
+  font-family: 'Pragati Narrow', sans-serif;
+  font-size: 18px;
+  padding: 5px 5px 15px 5px;
+}
+
+.infoDivs {
+  background-color: #242424;
+  border-radius: 8px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.posterDivs {
+  border-radius: 8px 0px 0px 8px;
+  border: 1px solid #333333;
+  min-height: $posterheight;
+}
+
+.statsDivs {
+  font-family: 'Ropa Sans', sans-serif;
+  border: 1px solid #333333;
+  padding: 10px;
+  min-width: 150px;
+  line-height: 1.5;
+}
+
+.ratingSpan {
+  color: #bf5702;
+  font-family: 'Graduate', cursive;
+  font-size: 28px;
+  text-shadow: 2px 2px 8px black;
+}
+
+.overviewDivs {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  border: 1px solid #333333;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.taglineSpans {
+  font-family: 'Courgette', cursive;
+  color: #ecb250;
+}
+
+.buttonDivs {
+  padding-top: 5px;
+  padding-bottom: 2px;
+  margin: 0px;
+  text-align: center;
+}
+
+.infoButtons {
+  font-family: 'Ropa Sans', sans-serif;
+  color: #adadac;
+  background-color: #252525;
+  border: 1px solid #5e5e5e;
+  border-radius: 2px;
+  padding: 5px;
+  &:hover {
+    color: #bf5702;
+    cursor: pointer;
+  }
+}
+
+.moviePoster {
+  border-radius: 8px;
+}
+
+#newBadge {
+  background-color: #a60c23;
+  font-size: 18px;
+  display: inline;
+  border-radius: 4px;
+  padding: 5px;
+  padding-top: 10px;
+  margin-bottom: 25px;
+  margin-right: 5px;
+}
+
+#footer {
+  color: #593400;
+  font-family: sans-serif;
+  font-size: 12px;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+    a {
+      color: inherit;
+    }
+}
+
+#tmdbLogo {
+  opacity: 0.5;
+  &:hover {
+    opacity: 1.0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    .infoDivs {
+      flex-direction: column;
+    }
+
+    #searchInput {
+      width: $smallcontsize;
+    }
+
+    .contDivs {
+      width: $smallcontsize;
+    }
+
+    .posterDivs {
+      border-radius: 8px 8px 0px 0px;
+      border-bottom: 0px;
+      text-align: center;
+    }
+
+    .overviewDivs {
+      border-radius: 0px 0px 8px 8px;
+      border-top: 0px;
+    }
+}
