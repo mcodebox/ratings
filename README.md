@@ -5,7 +5,16 @@ Titles are searchable with a searchbar.
 
 To use this, make sure you get an API key from tmdb.org and enter it as an variable (TMDBapiKey) at the top of the included main.js-file.
 
-## Used libraries and CSS
+## Used libraries and CSS etc.
+
+TMDB API
+https://www.themoviedb.org/
+
+jQuery
+https://github.com/jquery/jquery
+
+Google Fonts
+https://fonts.google.com/
 
 Normalize.css (by necolas)
 https://github.com/necolas/normalize.css
